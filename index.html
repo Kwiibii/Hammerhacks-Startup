@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hammerhacks </title>
+        <style>
+            /* Apply box-sizing to all elements */
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Styling the images to ensure they scale properly */
+            img {
+                width: 222px;
+                height: auto;
+            }
+
+            /* Define the main layout using Flexbox */
+            .container {
+                display: flex;
+                justify-content: space-between; /* Creates space between the two columns */
+                flex-wrap: wrap; /* Ensures that the columns wrap on smaller screens */
+            }
+
+            /* Styling the columns */
+            .column {
+                width: 48%; /* Each column will take up about 48% of the container width */
+                padding: 10px;
+            }
+
+            /* Clearfix for the row to ensure proper floating */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Styling for row elements to differentiate sections */
+            .row {
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
+
+            .row h1, .row h2 {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Top Ten Songs of All Time</h1>
+        <h4> Students can often feel stressed and isolated by their studies. We thought that a good way to better bring people together would be to connect them through an interest that everybody shares; music! </h4>
+
+        <div class="container">
+            <!-- First Column -->
+            <div class="column">
+                <div class="row" style="background-color:#FFB695;">
+                    <h2>Jade's Picks</h2>  
+                    <p>Curses, The Crane Wives</p> <img src="https://images.genius.com/6d05e8fe52e35f1e85d1c226803773fd.683x683x1.png">
+                    <p>Voices of Other Times, Brian Auger</p> <img src="https://f4.bcbits.com/img/a0298530718_10.jpg">
+                    <p>King of the World, Steely Dan</p> <img src="https://i.scdn.co/image/ab67616d00001e02f08f479a9dcdf7db7c85e3a8">
+                    <p>Icarus, The Crane Wives</p> <img src="https://i.scdn.co/image/ab67616d0000b2730e66bc964cd450766a643a49">
+                    <p>Looking Out For You, Joy Again</p> <img src="https://i.scdn.co/image/ab67616d0000b2730622eff196953fe8ae95a847">
+                    <p>Undercover Martyn, Two Door</p> <img src="https://i.scdn.co/image/ab67616d0000b273585f3d70dce678a5978a0941">
+                    <p>Head Over Heels, Tears For Fears</p> <img src="https://i.scdn.co/image/ab67616d0000b273fa4d821fd57fd0eae264ce3a">
+                    <p>Canary In A Coal Mine, The Crane Wives</p> <img src="https://i.scdn.co/image/ab67616d0000b2730e66bc964cd450766a643a49">
+                    <p>The Less I Know The Better, Tame Impala</p> <img src="https://cdns-images.dzcdn.net/images/cover/4d9b3ad6489b071bb1aa6d959b1dba53/1900x1900-000000-80-0-0.jpg">
+                    <p>Train Keeps A Rolling, Jeff Golub</p> <img src="https://i.scdn.co/image/ab67616d0000b27395b78aec45477384d749c7af">
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="column">
+                <div class="row" style="background-color:#96D1CD;">
+                    <h2>Matt's Picks</h2>
+                    <p>Nutshell, Alice In Chains</p> <img src="https://m.media-amazon.com/images/I/61GpviCqvdL._UF894,1000_QL80_.jpg">
+                    <p>Bleed It Out, Linkin Park</p> <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Minutes_to_Midnight_cover.jpg">
+                    <p>Alive, Pearl Jam</p> <img src="https://i.scdn.co/image/ab67616d0000b273d400d27cba05bb0545533864">
+                    <p>Glycerine, Bush</p> <img src="https://i.scdn.co/image/ab67616d0000b273b915466e715e0bf6c3da35a1">
+                    <p>One Last Breath, Creed</p> <img src="https://i.scdn.co/image/ab67616d0000b273a32f2ae4dade83e0d7a294f4">
+                    <p>Free Bird, Lynyrd Skynyrd</p> <img src="https://i.scdn.co/image/ab67616d0000b273128450651c9f0442780d8eb8">
+                    <p>Under The Bridge, Red Hot Chili Peppers</p> <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/RHCP-BSSM.jpg">
+                    <p>Given Up, Linkin Park</p> <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Minutes_to_Midnight_cover.jpg">
+                    <p>Bullet With Butterfly Wings, Smashing Pumpkins</p> <img src="https://cdn-images.dzcdn.net/images/cover/604cf65ac87ccca2870943a04b26e95e/1900x1900-000000-80-0-0.jpg">
+                    <p>1979, Smashing Pumpkins</p> <img src="https://cdn-images.dzcdn.net/images/cover/604cf65ac87ccca2870943a04b26e95e/1900x1900-000000-80-0-0.jpg">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
